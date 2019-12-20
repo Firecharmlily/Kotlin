@@ -1,0 +1,8 @@
+7 01+#
+0  R  0 0 0 1  0 1 + #  scan right for #
+1  L  1 2 4 6  1 0 # #  move left and decrement
+2  L  2 2 3 5  0 1 + #  scan left for +
+3  L  0 3 6 0  1 0 + 1  move left and increment
+4  R  4 4 6 5  0 # # #  erase second operand
+5  Y  5 5 5 5  0 1 + #  accept
+6  N  6 6 6 6  0 1 + #  reject
