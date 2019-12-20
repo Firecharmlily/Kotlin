@@ -1,6 +1,4 @@
 /*
- * Author: Liana Villafuerte, lvillafuerte2018@my.fit.edu
- * Author: Erika Ambrioso, eambrioso2017@my.fit.edu
  * Course: CSE 4250, Spring 2019
  * Project: Proj2, Simulation (TM)
  * Implementation:  Kotlin version 1.1.4-2 (JRE 1.8.0_131-b11)
@@ -101,7 +99,7 @@ fun main(args: Array<String>) {
 					tmp = alphabet.last() + tmp
 					position = position.inc()
 					
-					loop@ for (i in alphabet.indices){
+					loop@ for (i in alphabet.indices){ //don't use break loops cause major points get taken off
 						if (tmp[position] == alphabet[i]){
 							tmp = tmp.substring(0, position) + alphabetChange[state][i] + tmp.substring(position + 1)
 							state = commReference[state][i]
